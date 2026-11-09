@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Галина Фомина — психолог, семейный и парный терапевт, сексолог, онлайн и Санкт-Петербург | Галя точно психолог</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Психолог Галина Фомина: семья и близкие, отношения в паре, тревога, самооценка, карьера и деньги, кризисы, сексология. Работаю с женщинами, мужчинами, парами и семьями. Бесплатное знакомство 20 минут.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: асимметричная сетка; светлая чистая база, шалфейные и глубокие зелёные плоскости, терракота только акцентами */
+:root{
+  --bg:#fafaf7;          /* чистый тёплый белый */
+  --surface:#ffffff;
+  --ink:#1d2328;         /* графит */
+  --muted:#5b6469;
+  --line:#e6e6e0;
+  --terra:#d65f3a;       /* терракота: кнопки, акценты, полосы */
+  --terra-deep:#b44a28;
+  --on-terra:#ffffff;
+  --soft:#eaf0eb;        /* светлый шалфей */
+  --band:#1f3f3a;        /* глубокий изумрудно-зелёный */
+  --band-ink:#f3f7f4;
+  --blush:#dfe9e2;       /* светлый шалфей поглубже для вставок */
+  --btn:#b44a28;         /* кнопки: глубокая терракота, контраст с белым >4.5 */
+  --btn-hover:#963b1f;
+  --display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --body:"Manrope","Segoe UI",system-ui,-apple-system,sans-serif;
+  --r:22px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121516;--surface:#1a1f20;--ink:#eef1ee;--muted:#a3aca8;--line:#2a3133;
+  --terra:#ee7d56;--terra-deep:#f59a79;--on-terra:#121516;--soft:#1d2624;
+  --band:#17312d;--band-ink:#eef5f1;--blush:#22302c;--btn:#ee7d56;--btn-hover:#f59a79;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121516;--surface:#1a1f20;--ink:#eef1ee;--muted:#a3aca8;--line:#2a3133;
+  --terra:#ee7d56;--terra-deep:#f59a79;--on-terra:#121516;--soft:#1d2624;
+  --band:#17312d;--band-ink:#eef5f1;--blush:#22302c;--btn:#ee7d56;--btn-hover:#f59a79;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media(min-width:720px){.wrap{padding-left:max(32px,env(safe-area-inset-left,0px));padding-right:max(32px,env(safe-area-inset-right,0px))}}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;letter-spacing:-.02em;text-wrap:balance;margin:0}
+h2{font-size:clamp(28px,4.2vw,46px)}
+h3{font-size:19px;font-weight:500;letter-spacing:-.01em;line-height:1.3}
+p{margin:0}
+.eyebrow{font:600 12px/1.2 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--terra)}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:60ch}
+section{padding-block:clamp(64px,9vw,120px)}
+.sec-head{display:grid;gap:16px;margin-bottom:clamp(36px,5vw,56px);max-width:760px}
+
+/* Кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;font:600 16px/1 var(--body);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--terra);outline-offset:3px}
+.btn-primary{background:var(--btn);color:var(--on-terra)}
+.btn-primary:hover{background:var(--btn-hover)}
+.btn-ghost{border-color:currentColor;color:var(--ink);background:transparent}
+.btn .arr{transition:transform .2s}.btn:hover .arr{transform:translateX(4px)}
+
+/* Шапка */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:70px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo img{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:50% 25%}
+.logo b{font:500 15px/1.1 var(--display);letter-spacing:-.01em;display:block}
+.logo b i{font-style:normal;color:var(--terra)}
+.hero h1.brand-h{font-size:clamp(40px,6.4vw,78px);font-weight:300;letter-spacing:-.035em}
+.hero h1.brand-h em{font-weight:500}
+.brand-sub{font-size:15px;font-weight:600;color:var(--muted);margin-top:-12px}
+.sure{display:grid;gap:4px;margin-top:14px;padding:22px 24px;background:var(--blush);border-radius:16px}
+.sure-q{font:300 clamp(20px,2.2vw,24px)/1.3 var(--display);letter-spacing:-.01em;color:var(--muted)}
+.sure-a{font:300 clamp(20px,2.2vw,24px)/1.3 var(--display);letter-spacing:-.01em}
+.sure-a em{font-style:normal;font-weight:500;color:var(--terra)}
+.logo small{font-size:12px;color:var(--muted)}
+nav.menu{display:none;gap:22px;font-size:14.5px;font-weight:500}
+nav.menu a{text-decoration:none;color:var(--muted);white-space:nowrap}
+.top .btn,.logo b{white-space:nowrap}nav.menu a:hover{color:var(--terra)}
+.top .btn{min-height:44px;padding:0 20px;font-size:14px}
+@media(min-width:1120px){nav.menu{display:flex}}
+@media(max-width:520px){.top .btn span.long{display:none}.logo small{display:none}}
+
+/* Hero */
+.hero{padding-block:clamp(40px,6vw,80px) clamp(56px,7vw,96px)}
+.hero .wrap{display:grid;gap:clamp(32px,5vw,64px);align-items:center}
+@media(min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr}}
+.hero-copy{display:grid;gap:26px;min-width:0}
+.hero h1{font-size:clamp(34px,5.4vw,64px);font-weight:300}
+.hero h1 em{font-style:normal;color:var(--terra);font-weight:400}
+.hero .roles{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13px;font-weight:600;padding:7px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink)}
+.chip:first-child{background:var(--blush);border-color:transparent}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:10px 28px;font-size:14px;color:var(--muted);padding-top:6px}
+.hero-facts span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--terra);margin-right:9px;vertical-align:2px}
+.hero-photo{position:relative;max-width:100%}
+.hero-photo::before{content:"";position:absolute;inset:8% -4% -6% 12%;border-radius:200px 200px var(--r) var(--r);background:repeating-linear-gradient(90deg,var(--terra) 0 14px,var(--terra-deep) 14px 16px);opacity:.9}
+.hero-photo img{position:relative;width:100%;aspect-ratio:4/3.6;object-fit:cover;object-position:45% 40%;border-radius:220px 220px var(--r) var(--r)}
+.hero-note{position:absolute;left:-4%;bottom:7%;max-width:250px;background:var(--surface);border-radius:16px;padding:16px 18px;box-shadow:0 18px 40px -18px rgba(60,20,10,.35);font-size:14px;line-height:1.45}
+.hero-note b{display:block;font:500 15px/1.3 var(--display);color:var(--terra);margin-bottom:4px}
+@media(max-width:560px){.hero-note{position:relative;left:auto;bottom:auto;margin:-40px 16px 0;max-width:none}}
+
+/* Боли */
+.pains{background:var(--soft)}
+.pain-grid{display:grid;gap:0;grid-template-columns:1fr}
+@media(min-width:760px){.pain-grid{grid-template-columns:1fr 1fr}}
+.pain{display:flex;gap:16px;padding:22px 4px;border-top:1px solid color-mix(in srgb,var(--ink) 12%,transparent);font-size:18px;line-height:1.45}
+.pain::before{content:"“";font:400 40px/0.8 var(--display);color:var(--terra);flex:none;width:26px}
+@media(min-width:760px){.pain:nth-child(odd){padding-right:32px}.pain:nth-child(even){padding-left:32px;border-left:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}}
+.pains .after{margin-top:40px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.pains .after p{font-size:19px;max-width:52ch}
+
+/* Направления */
+.dirs{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:720px){.dirs{grid-template-columns:repeat(2,1fr)}}
+.dir{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:30px;transition:border-color .2s,transform .2s;display:grid;gap:14px;align-content:start}
+.dir:hover{border-color:var(--terra);transform:translateY(-3px)}
+.dir .tag{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.dir ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;color:var(--muted);font-size:15.5px}
+.dir li{padding-left:20px;position:relative}
+.dir li::before{content:"";position:absolute;left:0;top:.7em;width:10px;height:1.5px;background:var(--terra)}
+
+/* Диагностика — полоса */
+.band{background:var(--band);color:var(--band-ink);position:relative;overflow:hidden}
+.band::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:var(--terra);opacity:.18;filter:blur(10px);pointer-events:none}
+.band .wrap{position:relative;z-index:1;display:grid;gap:clamp(32px,5vw,64px);align-items:center}
+@media(min-width:900px){.band .wrap{grid-template-columns:1.1fr .9fr}}
+.band .eyebrow{color:var(--terra)}
+.band h2{color:var(--band-ink)}
+.band .lead{color:var(--band-ink);opacity:.88}
+.band-copy{display:grid;gap:22px;min-width:0}
+.gets{display:grid;gap:14px;margin:6px 0 0;padding:0;list-style:none}
+.gets li{display:flex;gap:14px;align-items:flex-start;font-size:17px}
+.gets li::before{content:"✓";flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:700;background:var(--btn);color:var(--on-terra)}
+.offer-card{background:var(--surface);color:var(--ink);position:relative;z-index:1;border-radius:var(--r);padding:32px;display:grid;gap:18px;box-shadow:0 30px 60px -30px rgba(30,8,3,.5)}
+.offer-card .price{font:300 clamp(38px,5vw,52px)/1 var(--display);letter-spacing:-.03em}
+.offer-card .price small{font:500 16px var(--body);color:var(--muted);letter-spacing:0}
+.offer-meta{display:grid;gap:10px;font-size:15px;color:var(--muted);border-block:1px solid var(--line);padding-block:16px}
+.offer-meta div{display:flex;justify-content:space-between;gap:12px}
+.offer-meta b{color:var(--ink);font-weight:600;text-align:right}
+.ph{border-bottom:1.5px dashed var(--terra);padding-bottom:1px}
+
+/* Обо мне */
+.about .wrap{display:grid;gap:clamp(32px,5vw,64px)}
+@media(min-width:900px){.about .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}}
+.about-photos{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;align-items:end}
+.about-photos img{width:100%;border-radius:var(--r);object-fit:cover}
+.about-photos .p1{aspect-ratio:3/4.2;object-position:50% 20%;grid-row:span 2}
+.about-photos .p2{aspect-ratio:3/4;object-position:50% 12%}
+.about-photos figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4}
+.moto{margin:0;display:grid;gap:8px;max-width:420px}
+.moto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:78% 50%;border-radius:var(--r)}
+.moto figcaption{font-size:13px;color:var(--muted)}
+.about-copy{display:grid;gap:20px;min-width:0}
+.about-copy p{max-width:62ch}
+.creds{display:grid;gap:0;margin-top:10px;border-top:1px solid var(--line)}
+.cred{display:grid;grid-template-columns:minmax(0,140px) 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.cred span{color:var(--muted);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding-top:3px}
+
+/* Свобода */
+.freedom{padding-block:0}
+.freedom .wrap{display:grid;gap:0;border-radius:var(--r);overflow:hidden}
+.freedom-inner{display:grid;background:var(--blush);border-radius:var(--r);overflow:hidden}
+@media(min-width:820px){.freedom-inner{grid-template-columns:.85fr 1.15fr}}
+.freedom-inner img{width:100%;height:100%;min-height:360px;max-height:620px;object-fit:cover;object-position:50% 35%}
+.freedom-text{padding:clamp(32px,5vw,64px);display:grid;gap:20px;align-content:center}
+.freedom-text blockquote{margin:0;font:300 clamp(24px,3vw,34px)/1.25 var(--display);letter-spacing:-.02em}
+.freedom-text blockquote b{font-weight:400;color:var(--terra)}
+
+/* Шаги */
+.steps{display:grid;gap:18px;grid-template-columns:1fr;counter-reset:s}
+@media(min-width:720px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{display:grid;gap:12px;align-content:start;padding-top:22px;border-top:2px solid var(--terra)}
+.step .n{font:300 15px/1 var(--display);color:var(--terra)}
+.step p{color:var(--muted);font-size:15.5px}
+
+/* Цены */
+.prices{background:var(--soft)}
+.price-grid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:860px){.price-grid{grid-template-columns:repeat(3,1fr)}}
+.tier{border:1px solid var(--line);border-radius:var(--r);padding:30px;display:grid;gap:16px;align-content:start;background:var(--surface)}
+.tier.hot{background:var(--band);color:var(--band-ink);border-color:var(--band)}
+.tier .t-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.tier .badge{font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;background:var(--btn);color:var(--on-terra)}
+.tier .amount{font:300 40px/1 var(--display);letter-spacing:-.03em}
+.tier .amount small{font:500 15px var(--body);opacity:.75;letter-spacing:0}
+.tier p{font-size:15.5px;opacity:.85}
+.tier .btn{margin-top:6px}
+.tier.hot .btn-primary{background:var(--btn);color:var(--on-terra)}
+
+.note{margin-top:22px;font-size:14px;color:var(--muted);max-width:70ch}
+
+/* FAQ */
+.faq{display:grid;gap:0;max-width:880px;border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;position:relative;font:500 18px/1.35 var(--body)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font:300 28px/1 var(--display);color:var(--terra);transition:transform .25s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details p{padding:0 0 24px;color:var(--muted);max-width:68ch}
+
+/* Запись и контакты */
+.book .wrap{display:grid;gap:clamp(32px,5vw,56px)}
+@media(min-width:900px){.book .wrap{grid-template-columns:1fr 1fr;align-items:start}}
+.book-left{display:grid;gap:22px;min-width:0}
+.contacts{display:grid;gap:12px;margin-top:8px}
+.contact{display:flex;align-items:center;gap:16px;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:16px;min-width:0}
+.contact .ic{flex:none;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--blush);color:var(--terra)}
+.contact .ic svg{width:22px;height:22px}
+.contact .meta{min-width:0;flex:1}
+.contact .meta small{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.contact .meta a,.contact .meta span{font-weight:600;font-size:17px;text-decoration:none;overflow-wrap:anywhere}
+.contact .meta a:hover{color:var(--terra)}
+.copy{flex:none;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:7px 12px;font:600 12px var(--body);cursor:pointer}
+.copy:hover{color:var(--terra);border-color:var(--terra)}
+.sample{font-size:13px;color:var(--muted)}
+form.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,4vw,36px);display:grid;gap:16px}
+form.card h3{font-size:22px}
+.field{display:grid;gap:6px}
+.field label{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select,.field textarea{width:100%;font:500 16px var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.field textarea{min-height:96px;resize:vertical}
+.seg{display:flex;flex-wrap:wrap;gap:8px;position:relative}
+.seg input{position:absolute;left:0;top:0;width:1px;height:1px;margin:0;padding:0;opacity:0;pointer-events:none}
+.seg label{font-size:14px;font-weight:600;padding:10px 16px;border:1px solid var(--line);border-radius:999px;cursor:pointer;text-transform:none;letter-spacing:0;color:var(--ink)}
+.seg input:checked+label{background:var(--btn);border-color:var(--btn);color:var(--on-terra)}
+.seg input:focus-visible+label{outline:3px solid var(--terra);outline-offset:2px}
+.fine{font-size:13px;color:var(--muted)}
+.done{background:var(--soft);border-radius:14px;padding:16px;font-size:15px}
+
+/* Навигатор по темам */
+.topics{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:680px){.topics{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.topics{grid-template-columns:repeat(3,1fr)}}
+.topic{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;gap:12px;grid-template-rows:auto auto auto 1fr auto;min-width:0;transition:border-color .2s,transform .2s}
+.topic:hover{border-color:var(--terra);transform:translateY(-3px)}
+.topic .who{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.topic h3{font-size:20px}
+.topic .q{font-size:16px;line-height:1.45;color:var(--ink);padding-left:14px;border-left:2px solid var(--terra)}
+.topic ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;color:var(--muted);font-size:15px;align-content:start}
+.topic li{padding-left:18px;position:relative}
+.topic li::before{content:"";position:absolute;left:0;top:.7em;width:9px;height:1.5px;background:var(--terra)}
+.topic .pick{justify-self:start;margin-top:4px;background:none;border:0;padding:6px 0;font:600 15px var(--body);color:var(--terra);cursor:pointer;text-decoration:none}
+.topic .pick:hover{color:var(--terra-deep)}
+.topic.unsure{background:var(--band);color:var(--band-ink);border-color:var(--band)}
+.topic.unsure .who,.topic.unsure ul{color:var(--band-ink);opacity:.8}
+.topic.unsure .q{color:var(--band-ink)}
+.audience{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+
+/* Цены: расширенная сетка */
+.tier .amount.free{color:var(--terra)}
+.tier .dur{font-size:14px;font-weight:600;color:var(--muted)}
+.tier.hot .dur{color:var(--band-ink);opacity:.75}
+.tier.wide{grid-column:1/-1;display:grid;gap:16px 40px;align-items:center}
+@media(min-width:860px){.tier.wide{grid-template-columns:1.2fr 1fr auto}}
+.tier.wide ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:15px;color:var(--muted)}
+.tier.wide li{padding-left:18px;position:relative}
+.tier.year{background:var(--surface);border:1.5px solid var(--terra)}
+.tier .badge{white-space:nowrap}
+.tier.year ul{color:var(--muted)}
+.tier.wide li::before{content:"";position:absolute;left:0;top:.7em;width:9px;height:1.5px;background:var(--terra)}
+
+/* Группы */
+.groups-card{display:grid;gap:24px;background:var(--blush);border-radius:var(--r);padding:clamp(28px,4vw,48px)}
+@media(min-width:860px){.groups-card{grid-template-columns:1.3fr 1fr;align-items:center}}
+.groups-card .lead{color:var(--ink);opacity:.8}
+.groups-card .side{display:grid;gap:14px}
+.men-group{display:grid;gap:18px 40px;margin-top:18px;background:var(--band);color:var(--band-ink);border-radius:var(--r);padding:clamp(24px,4vw,40px);align-items:center}
+@media(min-width:900px){.men-group{grid-template-columns:1.5fr .8fr auto}}
+.men-group h3{font-size:24px}
+.men-group p{opacity:.9}
+.men-quote{font:300 20px/1.3 var(--display)}
+.men-group ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.men-group li{padding-left:18px;position:relative}
+.men-group li::before{content:"";position:absolute;left:0;top:.7em;width:9px;height:1.5px;background:var(--terra)}
+.group-gains{display:grid;gap:14px;margin-top:18px}
+.group-gains h3{font-size:22px}
+.group-gains ul{margin:0;padding:0;list-style:none;display:grid;gap:12px;grid-template-columns:1fr}
+@media(min-width:760px){.group-gains ul{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.group-gains ul{grid-template-columns:repeat(3,1fr)}}
+.group-gains li{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;font-size:15.5px;color:var(--muted);min-width:0}
+.group-gains li b{display:block;color:var(--ink);font-weight:700;margin-bottom:4px}
+.group-photos{display:grid;gap:14px;margin-top:14px;grid-template-columns:1fr}
+@media(min-width:720px){.group-photos{grid-template-columns:repeat(3,1fr)}}
+.group-photos figure{margin:0;display:grid;gap:8px;min-width:0}
+.group-photos img{width:100%;max-width:100%;object-fit:cover;border-radius:var(--r);aspect-ratio:3/2}
+.group-photos figcaption{font-size:13px;color:var(--muted)}
+
+/* Истории из практики */
+.cases-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.cases-filter button{font:600 14px var(--body);padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.cases-filter button[aria-pressed="true"]{background:var(--btn);border-color:var(--btn);color:var(--on-terra)}
+.cases{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:720px){.cases{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.cases{grid-template-columns:repeat(3,1fr)}}
+a.case{text-decoration:none;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;gap:14px;grid-template-rows:auto auto 1fr auto auto;min-width:0;transition:border-color .2s,transform .2s}
+a.case:hover{border-color:var(--terra);transform:translateY(-3px)}
+a.case[hidden]{display:none}
+a.case h3{font-size:21px}
+.case .meta-row{display:flex;flex-wrap:wrap;gap:6px}
+.case .meta-row span{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:var(--soft);color:var(--ink)}
+.case-teaser{color:var(--muted);font-size:15.5px}
+.case-who{font-size:13px;font-weight:600;color:var(--muted)}
+.case-go{font-weight:700;font-size:15px;color:var(--terra)}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,3vw,32px);display:grid;gap:16px;align-content:start;min-width:0}
+.case .meta-row{display:flex;flex-wrap:wrap;gap:8px}
+.case .meta-row span{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:var(--soft);color:var(--ink)}
+.case .meta-row span.fmt{background:var(--blush)}
+.case h3{font-size:21px}
+.case dl{margin:0;display:grid;gap:12px}
+.case dt{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--terra)}
+.case dd{margin:2px 0 0;color:var(--muted);font-size:15.5px}
+.case .quote{font:300 18px/1.4 var(--display);letter-spacing:-.01em;padding-top:14px;border-top:1px solid var(--line)}
+.cases-empty{color:var(--muted);padding:24px 0}
+.case-who{font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.04em;margin-top:-8px}
+.case-step{display:grid;gap:8px}
+.case-step p{color:var(--muted);font-size:15.5px}
+.case-step .case-label{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--terra)}
+.case-step blockquote{margin:0;padding-left:14px;border-left:2px solid var(--terra);font-size:16px;line-height:1.5;color:var(--ink)}
+.case-more{display:grid;gap:16px;border:0}
+.case-more summary{list-style:none;cursor:pointer;font:600 15px var(--body);color:var(--terra);padding:4px 0;position:static}
+.case-more summary::after{content:" ↓";position:static;transform:none;font:inherit;color:inherit}
+.case-more[open] summary::after{content:" ↑";transform:none}
+.case-more[open]{display:grid;gap:16px}
+.case-more[open] summary{order:9}
+.case-more > .case-step{margin-top:16px}
+.cases-note{margin-top:22px;font-size:14px;color:var(--muted)}
+
+
+/* Отзывы */
+.reviews{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:720px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:grid;gap:18px;align-content:space-between;min-width:0}
+.review blockquote{margin:0;font-size:17px;line-height:1.55;position:relative;padding-top:30px}
+.review blockquote::before{content:"\201C";position:absolute;top:-6px;left:-2px;font:400 54px/1 var(--display);color:var(--terra)}
+.review figcaption{font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.02em}
+
+/* Документы */
+.docs{display:grid;gap:14px;margin-top:22px}
+.docs-grid{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:600px){.docs-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1100px){.docs-grid{grid-template-columns:repeat(4,1fr)}}
+.doc{display:grid;gap:8px;align-content:start;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:8px;cursor:zoom-in;font:500 12.5px/1.35 var(--body);color:var(--muted);transition:border-color .2s}
+.doc:hover{border-color:var(--terra)}
+.doc img{width:100%;aspect-ratio:3/4;object-fit:contain;border-radius:8px;background:var(--soft)}
+.doc-view{border:0;border-radius:var(--r);padding:16px;max-width:min(92vw,900px);max-height:92vh;background:var(--surface);color:var(--ink)}
+.doc-view::backdrop{background:rgba(10,14,15,.75)}
+.doc-view img{max-width:100%;max-height:78vh;margin:0 auto;border-radius:8px}
+.doc-view p{margin-top:10px;font-size:14px;color:var(--muted);text-align:center}
+.doc-close{position:absolute;top:10px;right:10px;width:40px;height:40px;border-radius:50%;border:0;background:var(--bg);color:var(--ink);font-size:18px;cursor:pointer}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted);line-height:1.45}
+.consent input{margin-top:3px;width:18px;height:18px;accent-color:var(--terra);flex:none}
+
+footer{border-top:1px solid var(--line);padding-block:36px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top"><img src="img/avatar.jpg" alt="Галина Фомина"><div><b>Галя <i>точно</i> психолог</b><small>Галина Фомина</small></div></a>
+    <nav class="menu" aria-label="Разделы">
+      <a href="#topics">С чем приходят</a>
+      <a href="#price">Форматы и цены</a>
+      <a href="#groups">Группы</a>
+      <a href="#cases">Истории</a>
+      <a href="#about">Обо мне</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn-primary" href="#book" data-format="Знакомство">Знакомство <span class="long">бесплатно</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="roles">
+          <span class="chip">Психолог</span><span class="chip">Семейный и парный терапевт</span><span class="chip">Гештальт-терапевт</span><span class="chip">Сексолог</span><span class="chip">Юрист</span>
+        </div>
+        <h1 class="brand-h">Галя <em>точно</em> психолог</h1>
+        <p class="brand-sub">Галина Фомина · семейный и парный терапевт, гештальт-терапевт, сексолог</p>
+        <p class="lead">Работаю с женщинами и мужчинами любого возраста, с парами и семьями. Неважно, кем вы работаете и сколько зарабатываете. Важно, что с вами происходит.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#book" data-format="Знакомство">Бесплатное знакомство, 20 минут <span class="arr">→</span></a>
+          <a class="btn btn-ghost" href="#topics">Выбрать свою тему</a>
+        </div>
+        <div class="hero-facts"><span>Онлайн из любой страны</span><span>Группы онлайн и в Петербурге</span><span>Конфиденциально</span></div>
+      </div>
+      <figure class="hero-photo" style="margin:0">
+        <img src="img/hero.jpg" alt="Галина Фомина в кабинете, в белом костюме, сидит в кресле">
+        <div class="hero-note"><b>Без оценок и «правильных» ответов</b>О злости, деньгах, сексе и страхах здесь говорят прямо. Это нормально.</div>
+      </figure>
+    </div>
+  </section>
+
+  <section id="topics" class="pains" aria-labelledby="topics-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Выберите свою тему</p>
+        <h2 id="topics-h">С чем вы пришли?</h2>
+        <p class="lead">Найдите то, что больше всего похоже на вашу ситуацию. Нажмите «Это про меня», и тема сама подставится в заявку.</p>
+      </div>
+      <div class="topics">
+        <article class="topic">
+          <p class="who">Родители, дети, родня</p>
+          <h3>Семья и близкие</h3>
+          <p class="q">Люблю их, но после каждой встречи без сил.</p>
+          <ul><li>сложно с родителями или роднёй партнёра</li><li>отношения со взрослыми детьми или подростком</li><li>одни и те же семейные сценарии из поколения в поколение</li></ul>
+          <a class="pick" href="#book" data-topic="Семья и близкие">Это про меня →</a>
+        </article>
+        <article class="topic">
+          <p class="who">Вы и партнёр</p>
+          <h3>Пара и отношения</h3>
+          <p class="q">Хочу уйти и боюсь. Хочу остаться и тоже боюсь.</p>
+          <ul><li>ссоры по одному и тому же сценарию</li><li>живём как соседи</li><li>измена и восстановление доверия</li></ul>
+          <a class="pick" href="#book" data-topic="Пара и отношения">Это про меня →</a>
+        </article>
+        <article class="topic">
+          <p class="who">Деликатно</p>
+          <h3>Близость и сексуальность</h3>
+          <p class="q">Со мной что-то не так или с нами?</p>
+          <ul><li>пропало желание или оно разное</li><li>напряжение и страх в близости</li><li>неловко говорить о своих желаниях</li></ul>
+          <a class="pick" href="#book" data-topic="Близость и сексуальность">Это про меня →</a>
+        </article>
+        <article class="topic">
+          <p class="who">Внутреннее состояние</p>
+          <h3>Тревога и эмоции</h3>
+          <p class="q">Внешне всё нормально, а внутри не отпускает.</p>
+          <ul><li>постоянное напряжение и тревога</li><li>раздражение, срывы на близких</li><li>выгорание и апатия</li></ul>
+          <a class="pick" href="#book" data-topic="Тревога и эмоции">Это про меня →</a>
+        </article>
+        <article class="topic">
+          <p class="who">Отношения с собой</p>
+          <h3>Самооценка и уверенность</h3>
+          <p class="q">Я сам себе главный критик.</p>
+          <ul><li>сравниваю себя с другими</li><li>не умею отказывать и защищать границы</li><li>чувствую себя самозванцем</li></ul>
+          <a class="pick" href="#book" data-topic="Самооценка и уверенность">Это про меня →</a>
+        </article>
+        <article class="topic">
+          <p class="who">Работа и своё дело</p>
+          <h3>Карьера, деньги, бизнес</h3>
+          <p class="q">Все решения на мне, и не с кем это обсудить.</p>
+          <ul><li>выбор, смена работы, застой</li><li>предпринимательство и одиночество в решениях</li><li>деньги, работа и семья тянут в разные стороны</li></ul>
+          <a class="pick" href="#book" data-topic="Карьера, деньги, бизнес">Это про меня →</a>
+        </article>
+        <article class="topic">
+          <p class="who">Когда жизнь меняется</p>
+          <h3>Кризисы и перемены</h3>
+          <p class="q">Старая жизнь закончилась, а новая не началась.</p>
+          <ul><li>переезд или эмиграция</li><li>развод и жизнь после него</li><li>потеря, возрастной кризис</li></ul>
+          <a class="pick" href="#book" data-topic="Кризисы и перемены">Это про меня →</a>
+        </article>
+        <article class="topic">
+          <p class="who">Будущие и молодые родители</p>
+          <h3>Беременность и рождение ребёнка</h3>
+          <p class="q">Мы стали родителями и перестали быть парой.</p>
+          <ul><li>планирование и беременность</li><li>первый год после родов</li><li>пара после рождения ребёнка</li></ul>
+          <a class="pick" href="#book" data-topic="Беременность и рождение ребёнка">Это про меня →</a>
+        </article>
+        <article class="topic unsure">
+          <p class="who">Начать отсюда</p>
+          <h3>Не знаю, с чего начать</h3>
+          <p class="q">Просто плохо, и я не могу это сформулировать.</p>
+          <ul><li>20 минут бесплатно</li><li>без обязательств</li><li>поймём вместе, что вам подходит</li></ul>
+          <a class="btn btn-primary" href="#book" data-format="Знакомство" data-topic="Пока не знаю">Записаться на знакомство</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="diagnostics" class="band" aria-labelledby="diag-h">
+    <div class="wrap">
+      <div class="band-copy">
+        <p class="eyebrow">Первый шаг</p>
+        <h2 id="diag-h">Диагностика: увидеть картину целиком</h2>
+        <p class="lead">Одна встреча, после которой понятно, что происходит, где точка напряжения и с чего начать. Подходит для любой темы: семья, пара, работа, состояние. Без обязательств продолжать терапию.</p>
+        <ul class="gets">
+          <li>Разберём, как устроена ваша ситуация: роли, правила, где копится напряжение.</li>
+          <li>Получите один конкретный шаг на ближайшие недели.</li>
+          <li>Поймёте, какой формат дальше подходит: личная работа, для пары или для семьи.</li>
+        </ul>
+      </div>
+      <div class="offer-card">
+        <p class="eyebrow">Диагностика</p>
+        <p class="price">5 000 ₽ <small>· 50 минут</small></p>
+        <div class="offer-meta">
+          <div>Формат<b>онлайн в Zoom</b></div>
+          <div>Формат встречи<b>индивидуально, один на один</b></div>
+          <div>После встречи<b>шаг и рекомендации</b></div>
+        </div>
+        <a class="btn btn-primary" href="#book" data-format="Диагностика">Записаться на диагностику <span class="arr">→</span></a>
+        <p class="fine">Не уверены, нужна ли диагностика? Начните с бесплатного знакомства на 20 минут.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="price" class="prices" aria-labelledby="price-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Форматы и цены</p>
+        <h2 id="price-h">С чего начать и как продолжить</h2>
+        <p class="lead">Договор всегда на один формат: личная работа, работа с парой или с семьёй. Какой подходит вам, решим на знакомстве или диагностике.</p>
+      </div>
+      <div class="price-grid">
+        <div class="tier">
+          <div class="t-top"><h3>Знакомство</h3><span class="badge">Бесплатно</span></div>
+          <p class="amount free">0 ₽</p>
+          <p class="dur">20 минут</p>
+          <p>Короткий разговор: что вас беспокоит, как я работаю, подходим ли мы друг другу.</p>
+          <a class="btn btn-ghost" href="#book" data-format="Знакомство">Записаться</a>
+        </div>
+        <div class="tier hot">
+          <div class="t-top"><h3>Диагностика</h3><span class="badge">С чего начать</span></div>
+          <p class="amount">5 000 <small>₽</small></p>
+          <p class="dur">50 минут</p>
+          <p>Разбор ситуации и системы, один конкретный шаг и рекомендация по формату.</p>
+          <a class="btn btn-primary" href="#book" data-format="Диагностика">Записаться на диагностику</a>
+        </div>
+        <div class="tier">
+          <div class="t-top"><h3>Консультация</h3></div>
+          <p class="amount">5 000 <small>₽</small></p>
+          <p class="dur">когда есть конкретный запрос</p>
+          <p>Консультация семейного психолога, сексолога или психолога по вашему вопросу. Для одного человека.</p>
+          <a class="btn btn-ghost" href="#book" data-format="Консультация">Записаться</a>
+        </div>
+        <div class="tier">
+          <div class="t-top"><h3>Сессия для пары</h3></div>
+          <p class="amount">8 000 <small>₽</small></p>
+          <p class="dur">90 минут</p>
+          <p>Парная терапия или совместная консультация сексолога. Мой клиент здесь — ваша пара.</p>
+          <a class="btn btn-ghost" href="#book" data-format="Для пары">Записаться</a>
+        </div>
+        <div class="tier">
+          <div class="t-top"><h3>Сессия для семьи</h3></div>
+          <p class="amount">10 000 <small>₽</small></p>
+          <p class="dur">90 минут</p>
+          <p>Для родителей и взрослых детей, для нескольких членов семьи. Я на стороне всей семейной системы.</p>
+          <a class="btn btn-ghost" href="#book" data-format="Для семьи">Записаться</a>
+        </div>
+        <div class="tier">
+          <div class="t-top"><h3>Подарок</h3></div>
+          <p class="amount"><small>сертификат</small></p>
+          <p class="dur">на знакомство, диагностику или сессию</p>
+          <p>Для партнёра, подруги, взрослого ребёнка. Напишите мне, и я пришлю сертификат.</p>
+          <a class="btn btn-ghost" href="#book" data-format="Сертификат">Хочу подарить</a>
+        </div>
+        <div class="tier wide hot">
+          <div>
+            <div class="t-top"><h3>Пакет «Пересборка семейной системы»</h3></div>
+            <p style="margin-top:12px">10 сессий для тех, кто готов не латать, а пересобрать отношения: в паре, в семье или с самим собой.</p>
+          </div>
+          <ul style="color:inherit;opacity:.85"><li>10 встреч в одном формате</li><li>план работы после диагностики</li><li>выгоднее, чем по одной встрече</li></ul>
+          <div style="display:grid;gap:12px">
+            <p class="amount">45 000 <small>₽</small></p>
+            <a class="btn btn-primary" href="#book" data-format="Пакет «Пересборка»">Узнать про пакет</a>
+          </div>
+        </div>
+        <div class="tier wide year">
+          <div>
+            <div class="t-top"><h3>Год рядом: личное ведение</h3><span class="badge">Свободно 2 места</span></div>
+            <p style="margin-top:12px">Для тех, у кого сейчас решается многое сразу: бизнес, семья, переезд, большие решения. Целый год я рядом: регулярные сессии и связь в мессенджере каждый день, когда нужно свериться, разобрать ситуацию или принять решение.</p>
+          </div>
+          <ul><li>сессия каждую неделю весь год</li><li>безлимитное участие во всех моих группах</li><li>на связи в мессенджере 7 дней в неделю</li><li>разбор важных ситуаций и решений в моменте</li><li>старт через диагностику и личный разговор</li></ul>
+          <div style="display:grid;gap:12px">
+            <p class="amount">500 000 <small>₽ / год</small></p>
+            <a class="btn btn-primary" href="#book" data-format="Год рядом">Оставить заявку</a>
+          </div>
+          <p class="fine" style="grid-column:1/-1">Формат не заменяет экстренную помощь. В кризисной ситуации звоните 112.</p>
+        </div>
+      </div>
+      <p class="note">Перенести встречу можно не позднее чем за 24 часа. Детей и подростков я не консультирую: работаю со взрослыми, парами и семьями.</p>
+    </div>
+  </section>
+
+  <section id="groups" aria-labelledby="groups-h">
+    <div class="wrap">
+      <div class="groups-card">
+        <div style="display:grid;gap:16px;min-width:0">
+          <p class="eyebrow">Группы</p>
+          <h2 id="groups-h">Группы и летний ретрит</h2>
+          <p class="lead">Группы для женщин и для мужчин, очно в Петербурге и онлайн в Zoom из любой страны, плюс летний выездной ретрит. В группе слышишь, что другие проживают то же самое, и пробуешь новое среди людей, которые понимают. И это дешевле личной терапии.</p>
+        </div>
+        <div class="side">
+          <p>Оставьте заявку и напишите, какая группа интересна: женская, мужская, онлайн или ретрит. Я пришлю в личные сообщения даты, место и стоимость.</p>
+          <a class="btn btn-primary" href="#book" data-format="Группа">Записаться в группу</a>
+          <p class="fine">Если набор закрыт, поставлю вас в лист ожидания и напишу, когда откроется следующий.</p>
+        </div>
+      </div>
+      <div class="men-group">
+        <div style="display:grid;gap:10px;min-width:0">
+          <p class="eyebrow">Новая группа</p>
+          <h3>Мужская группа</h3>
+          <p>Для мужчин, которых предали, бросили или с которыми поступили жестоко. Которые больше не верят, но всё ещё хотят любить. Первые 6 месяцев только мужчины: прожить то, что случилось, вернуть опору и уверенность. Следующие 6 месяцев вместе с женской группой: разобраться, какой я в отношениях, чтобы не попасть в такую историю снова.</p>
+          <p class="men-quote">Человеку нужен человек.</p>
+        </div>
+        <ul>
+          <li>до 10 человек</li><li>раз в неделю по 3 часа</li><li>очно в Петербурге или онлайн</li><li>4 000 ₽ за встречу</li>
+        </ul>
+        <a class="btn btn-primary" href="#book" data-format="Группа">Узнать условия</a>
+      </div>
+      <div class="group-gains">
+        <h3>Что даёт группа</h3>
+        <ul>
+          <li><b>«Не только у меня так».</b> Слышите, что другие проживают то же самое, и стыд отступает.</li>
+          <li><b>Живая обратная связь.</b> Узнаёте, как вас видят и чувствуют другие люди, здесь и сейчас.</li>
+          <li><b>Безопасная репетиция.</b> Пробуете новое: сказать «нет», попросить, разозлиться — и видите, что отношения это выдерживают.</li>
+          <li><b>Опора на людей.</b> Меньше одиночества, больше поддержки и связей.</li>
+          <li><b>Чужие истории как зеркало.</b> Опыт другого человека иногда попадает точнее любого совета.</li>
+          <li><b>Контакт с собой.</b> Учитесь замечать чувства и тело в моменте, а не задним числом.</li>
+        </ul>
+        <p class="fine">По данным исследований, групповая терапия в целом так же эффективна, как индивидуальная, и при этом доступнее по цене.</p>
+      </div>
+      <div class="group-photos">
+        <figure><img src="img/group-summer.jpg" alt="Летний ретрит: участники сидят в кругу на террасе среди деревьев" loading="lazy"><figcaption>Летний ретрит</figcaption></figure>
+        <figure><img src="img/group-online.jpg" alt="Онлайн-группа в Zoom: участники улыбаются в своих окошках" loading="lazy"><figcaption>Онлайн-группа в Zoom</figcaption></figure>
+        <figure><img src="img/group-circle.jpg" alt="Участники группы сидят в кругу в зале и держатся за руки" loading="lazy"><figcaption>Встреча группы в Петербурге</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="about-photos">
+        <img class="p1" src="img/portrait.jpg" alt="Портрет Галины Фоминой в розовом жакете">
+        <figure style="margin:0">
+          <img class="p2" src="img/avatar.jpg" alt="Галина Фомина улыбается, в белом костюме">
+          <figcaption>Галина Фомина, психолог</figcaption>
+        </figure>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">Обо мне</p>
+        <h2 id="about-h">Меня зовут Галина Фомина</h2>
+        <p class="lead">Я психолог, семейный и парный терапевт, гештальт-терапевт, сексолог и юрист по первому образованию. 7 лет в практике. Ко мне приходят женщины и мужчины, пары и семьи, предприниматели и люди самых разных профессий.</p>
+        <p>Я выросла в бедной семье в девяностые и построила ту семью, о которой мечтала. С мужем мы вместе 19 лет. За это время было около двадцати переездов, семь лет жизни в Европе, двое дочерей и даже «психологический развод»: заявление, юрист, раздел денег, полгода порознь. Мы вернулись друг к другу. Поэтому я знаю изнутри, что такое стоять на развилке «остаться или уйти».</p>
+        <p>Мне важно, чтобы в кабинете мы говорили прямо. В паре я на стороне пары, в семье на стороне всей системы, в личной работе на вашей стороне. Готовых рецептов не даю: мы вместе смотрим, как всё устроено и что можно поменять.</p>
+        <p>В жизни я люблю скорость и свободу: езжу на мотоцикле, ныряю с аквалангом, прыгала с парашютом и летала на параплане. Настоящий выбор всегда немного страшный, и я это хорошо знаю.</p>
+        <figure class="moto"><img src="img/moto-spb.jpg" alt="Галина Фомина на мотоцикле у Ростральной колонны в Петербурге" loading="lazy"><figcaption>Вне кабинета — мотоцикл и Петербург</figcaption></figure>
+        <div class="sure">
+          <p class="sure-q">— А вы точно психолог?</p>
+          <p class="sure-a">— <em>Точно.</em> Вот:</p>
+        </div>
+        <div class="creds">
+          <div class="cred"><span>Метод</span><div>Гештальт-терапия, психодрама, системный взгляд на семью и пару</div></div>
+          <div class="cred"><span>Психология</span><div>Высшее психологическое: бакалавр психологии, Московский институт психоанализа, 2025</div></div>
+          <div class="cred"><span>Гештальт</span><div>Полная программа «Гештальт-терапия», Московский институт гештальта и психодрамы, 2022–2026, 600 учебных часов. Программа соответствует стандартам Европейской ассоциации гештальт-терапии (EAGT)</div></div>
+          <div class="cred"><span>Сексология</span><div>«Телесная реляционная секс-терапия (ERST)», программа Стеллы Резник, МИГИП, 2021</div></div>
+          <div class="cred"><span>Психодрама</span><div>«Основы психодраматерапии», МИГИП, 2023, 100 часов</div></div>
+          <div class="cred"><span>Юриспруденция</span><div>Высшее юридическое, Российский государственный гуманитарный университет, 2010</div></div>
+          <div class="cred"><span>Курсы</span><div>Телесный процесс (Майкл Клемменс), присутствие в гештальт-терапии, международные конференции МИГИП 2022–2023</div></div>
+          <div class="cred"><span>Сейчас учусь</span><div>Перинатальная психология: работа с парами в период беременности и после родов</div></div>
+          <div class="cred"><span>Практика</span><div>7 лет практики</div></div>
+          <div class="cred"><span>Супервизия</span><div>Более 500 часов супервизии</div></div>
+          <div class="cred"><span>Личная терапия</span><div>9 лет непрерывной личной терапии</div></div>
+          <div class="cred"><span>Официально</span><div>Работаю как ИП Фомина: договор, чек на каждую оплату</div></div>
+        </div>
+        <div class="docs">
+          <p class="eyebrow">Документы</p>
+          <div class="docs-grid">
+            <button type="button" class="doc" data-full="img/docs/gestalt-2026.jpg" data-cap="Гештальт-терапия, 600 часов, 2022–2026"><img src="img/docs/gestalt-2026-s.jpg" alt="Гештальт-терапия, 600 часов, 2022–2026" loading="lazy"><span>Гештальт-терапия, 600 часов, 2022–2026</span></button>
+            <button type="button" class="doc" data-full="img/docs/diplom-psiholog.jpg" data-cap="Диплом бакалавра психологии, 2025"><img src="img/docs/diplom-psiholog-s.jpg" alt="Диплом бакалавра психологии, 2025" loading="lazy"><span>Диплом бакалавра психологии, 2025</span></button>
+            <button type="button" class="doc" data-full="img/docs/diplom-yurist.jpg" data-cap="Диплом юриста, 2010"><img src="img/docs/diplom-yurist-s.jpg" alt="Диплом юриста, 2010" loading="lazy"><span>Диплом юриста, 2010</span></button>
+            <button type="button" class="doc" data-full="img/docs/erst-2021.jpg" data-cap="Секс-терапия ERST, Стелла Резник, 2021"><img src="img/docs/erst-2021-s.jpg" alt="Секс-терапия ERST, Стелла Резник, 2021" loading="lazy"><span>Секс-терапия ERST, Стелла Резник, 2021</span></button>
+            <button type="button" class="doc" data-full="img/docs/psihodrama-2023.jpg" data-cap="Основы психодраматерапии, 2023"><img src="img/docs/psihodrama-2023-s.jpg" alt="Основы психодраматерапии, 2023" loading="lazy"><span>Основы психодраматерапии, 2023</span></button>
+            <button type="button" class="doc" data-full="img/docs/gestalt-stupen-1.jpg" data-cap="Гештальт-консультирование, I ступень, 2022"><img src="img/docs/gestalt-stupen-1-s.jpg" alt="Гештальт-консультирование, I ступень, 2022" loading="lazy"><span>Гештальт-консультирование, I ступень, 2022</span></button>
+            <button type="button" class="doc" data-full="img/docs/prisutstvie-2023.jpg" data-cap="Присутствие в гештальт-терапии, 2023"><img src="img/docs/prisutstvie-2023-s.jpg" alt="Присутствие в гештальт-терапии, 2023" loading="lazy"><span>Присутствие в гештальт-терапии, 2023</span></button>
+            <button type="button" class="doc" data-full="img/docs/klemmens-2023.jpg" data-cap="Семинары Майкла Клемменса, 2023"><img src="img/docs/klemmens-2023-s.jpg" alt="Семинары Майкла Клемменса, 2023" loading="lazy"><span>Семинары Майкла Клемменса, 2023</span></button>
+            <button type="button" class="doc" data-full="img/docs/konf-2022-04.jpg" data-cap="Конференция МИГИП, апрель 2022"><img src="img/docs/konf-2022-04-s.jpg" alt="Конференция МИГИП, апрель 2022" loading="lazy"><span>Конференция МИГИП, апрель 2022</span></button>
+            <button type="button" class="doc" data-full="img/docs/konf-2022-12.jpg" data-cap="Конференция МИГИП, декабрь 2022"><img src="img/docs/konf-2022-12-s.jpg" alt="Конференция МИГИП, декабрь 2022" loading="lazy"><span>Конференция МИГИП, декабрь 2022</span></button>
+            <button type="button" class="doc" data-full="img/docs/konf-2023.jpg" data-cap="Конференция МИГИП, декабрь 2023"><img src="img/docs/konf-2023-s.jpg" alt="Конференция МИГИП, декабрь 2023" loading="lazy"><span>Конференция МИГИП, декабрь 2023</span></button>
+          </div>
+          <p class="fine">Нажмите на документ, чтобы открыть его крупно.</p>
+        </div>
+        <dialog class="doc-view" id="doc-view" aria-label="Документ"><button type="button" class="doc-close" aria-label="Закрыть">✕</button><img id="doc-img" src="" alt=""><p id="doc-cap"></p></dialog>
+      </div>
+    </div>
+  </section>
+
+  <section class="freedom" aria-label="Подход">
+    <div class="wrap">
+      <div class="freedom-inner">
+        <img src="img/svoboda.jpg" alt="Галина Фомина у большой надписи «Свобода» на фоне неба">
+        <div class="freedom-text">
+          <p class="eyebrow">Во что я верю</p>
+          <blockquote>Цель терапии не в том, чтобы сохранить что-то любой ценой. А в том, чтобы у вас появилась <b>свобода выбирать.</b></blockquote>
+          <p>Остаться и строить иначе или уйти бережно и без войны. Сменить работу или остаться и поменять своё отношение к ней. Решение за вами, я помогаю увидеть его ясно.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="steps-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Как проходит работа</p>
+        <h2 id="steps-h">От заявки до изменений</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><p class="n">01</p><h3>Знакомство</h3><p>20 минут бесплатно. Рассказываете, что беспокоит, я объясняю, как могу помочь.</p></div>
+        <div class="step"><p class="n">02</p><h3>Диагностика</h3><p>50 минут. Разбираем ситуацию целиком, вы получаете первый конкретный шаг.</p></div>
+        <div class="step"><p class="n">03</p><h3>Выбор формата</h3><p>Консультация по конкретному вопросу, работа для пары или семьи, пакет «Пересборка».</p></div>
+        <div class="step"><p class="n">04</p><h3>Регулярные встречи</h3><p>Обычно раз в неделю. Изменения становятся заметны уже через несколько недель.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cases" class="prices" aria-labelledby="cases-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Истории из практики</p>
+        <h2 id="cases-h">Как это бывает у других</h2>
+        <p class="lead">Реальные истории из практики. Имена и детали изменены так, чтобы узнать человека было нельзя, а каждый текст согласован с клиенткой.</p>
+      </div>
+      <div class="cases-filter" role="group" aria-label="Фильтр по темам">
+        <button type="button" data-filter="all" aria-pressed="true">Все</button>
+        <button type="button" data-filter="Семья и близкие" aria-pressed="false">Семья</button>
+        <button type="button" data-filter="Пара и отношения" aria-pressed="false">Пара</button>
+        <button type="button" data-filter="Близость и сексуальность" aria-pressed="false">Близость</button>
+        <button type="button" data-filter="Тревога и эмоции" aria-pressed="false">Тревога</button>
+        <button type="button" data-filter="Самооценка и уверенность" aria-pressed="false">Самооценка</button>
+        <button type="button" data-filter="Карьера, деньги, бизнес" aria-pressed="false">Карьера и бизнес</button>
+        <button type="button" data-filter="Кризисы и перемены" aria-pressed="false">Кризисы</button>
+        <button type="button" data-filter="Беременность и рождение ребёнка" aria-pressed="false">Родители</button>
+      </div>
+      <div class="cases" id="cases-list">
+        <a class="case" href="istorii/anna.html" data-topic="Пара и отношения|Тревога и эмоции|Самооценка и уверенность|Карьера, деньги, бизнес|Кризисы и перемены">
+          <div class="meta-row"><span>Пара и отношения</span><span>Тревога и эмоции</span><span>Самооценка и уверенность</span><span>Карьера, деньги, бизнес</span><span>Кризисы и перемены</span></div>
+          <h3>Семья была на грани развода. Сейчас они с мужем строят общее дело</h3>
+          <p class="case-teaser">Тревога доходила до обмороков, дома ссоры, дело дошло до заявления на развод. И в это же время тяжело болела мама.</p>
+          <p class="case-who">Анна, 44 · Личная терапия</p>
+          <span class="case-go">Читать кейс →</span>
+        </a>
+        <a class="case" href="istorii/sveta.html" data-topic="Пара и отношения|Кризисы и перемены|Самооценка и уверенность">
+          <div class="meta-row"><span>Пара и отношения</span><span>Кризисы и перемены</span><span>Самооценка и уверенность</span></div>
+          <h3>Пришла спасать брак, а бросила пить, развелась и построила свою жизнь у моря</h3>
+          <p class="case-teaser">Год смотрела блог и боялась написать. Была уверена: если изменит себя, брак наладится.</p>
+          <p class="case-who">Света · Личная терапия</p>
+          <span class="case-go">Читать кейс →</span>
+        </a>
+        <a class="case" href="istorii/yulya.html" data-topic="Тревога и эмоции|Семья и близкие|Самооценка и уверенность">
+          <div class="meta-row"><span>Тревога и эмоции</span><span>Семья и близкие</span><span>Самооценка и уверенность</span></div>
+          <h3>Тревога «орала» целыми днями. Теперь она спокойна даже перед приездом родителей</h3>
+          <p class="case-teaser">Почти каждую сессию плакала и не понимала о чём: «какой-то большой клубок».</p>
+          <p class="case-who">Юля · Личная терапия</p>
+          <span class="case-go">Читать кейс →</span>
+        </a>
+        <a class="case" href="istorii/anya.html" data-topic="Самооценка и уверенность|Тревога и эмоции|Семья и близкие|Карьера, деньги, бизнес">
+          <div class="meta-row"><span>Самооценка и уверенность</span><span>Тревога и эмоции</span><span>Семья и близкие</span><span>Карьера, деньги, бизнес</span></div>
+          <h3>Панические атаки, срывы на детей и «скажите мне, что делать». Через 4 месяца — своё дело</h3>
+          <p class="case-teaser">Пришла на пределе и хотела, чтобы психолог просто сказал, разводиться или нет.</p>
+          <p class="case-who">Аня · Личная терапия</p>
+          <span class="case-go">Читать кейс →</span>
+        </a>
+        <a class="case" href="istorii/margarita.html" data-topic="Кризисы и перемены|Пара и отношения|Карьера, деньги, бизнес">
+          <div class="meta-row"><span>Кризисы и перемены</span><span>Пара и отношения</span><span>Карьера, деньги, бизнес</span></div>
+          <h3>После краха мечты думала о расставании. Теперь муж едет за ней</h3>
+          <p class="case-teaser">«Мне не на что жаловаться. Но я выходила на улицу и плакала».</p>
+          <p class="case-who">Маргарита · Несколько консультаций</p>
+          <span class="case-go">Читать кейс →</span>
+        </a>
+        <a class="case" href="istorii/marina.html" data-topic="Самооценка и уверенность|Пара и отношения|Семья и близкие|Карьера, деньги, бизнес">
+          <div class="meta-row"><span>Самооценка и уверенность</span><span>Пара и отношения</span><span>Семья и близкие</span><span>Карьера, деньги, бизнес</span></div>
+          <h3>После брака с насилием она была «пустым местом». Теперь у неё новая семья и своё дело</h3>
+          <p class="case-teaser">Пришла в группу с ощущением «я потеряла полностью себя» и не раз хотела сбежать.</p>
+          <p class="case-who">Марина · Группа</p>
+          <span class="case-go">Читать кейс →</span>
+        </a>
+        <a class="case" href="istorii/vita.html" data-topic="Самооценка и уверенность|Кризисы и перемены|Пара и отношения">
+          <div class="meta-row"><span>Самооценка и уверенность</span><span>Кризисы и перемены</span><span>Пара и отношения</span></div>
+          <h3>После тяжёлых расставаний «я никто». Теперь — «я снова начинаю себя уважать»</h3>
+          <p class="case-teaser">Не верила психологам и собиралась выгребать сама, пока не зашла в тупик.</p>
+          <p class="case-who">Вита, 37 · Пакет "Пересборка", 10 сессий</p>
+          <span class="case-go">Читать кейс →</span>
+        </a>
+        <a class="case" href="istorii/klientka-50.html" data-topic="Тревога и эмоции|Семья и близкие|Кризисы и перемены">
+          <div class="meta-row"><span>Тревога и эмоции</span><span>Семья и близкие</span><span>Кризисы и перемены</span></div>
+          <h3>Хотела научиться пить так, чтобы дочь не злилась. Выбрала трезвость</h3>
+          <p class="case-teaser">Жила в режиме «пашешь-пашешь, потом устал». Раздражало всё, даже пыль на полу.</p>
+          <p class="case-who">Клиентка, 50 · Пакет "Пересборка", 10 сессий</p>
+          <span class="case-go">Читать кейс →</span>
+        </a>
+        <a class="case" href="istorii/natasha.html" data-topic="Тревога и эмоции|Пара и отношения|Самооценка и уверенность">
+          <div class="meta-row"><span>Тревога и эмоции</span><span>Пара и отношения</span><span>Самооценка и уверенность</span></div>
+          <h3>Тревога, развод и войны с бывшим мужем. Теперь — спокойные отношения ради сына</h3>
+          <p class="case-teaser">Всё понимала головой, но легче не становилось.</p>
+          <p class="case-who">Наташа, 32 · Личная терапия</p>
+          <span class="case-go">Читать кейс →</span>
+        </a>
+      </div>
+      <p class="cases-note">Имена изменены. Истории опубликованы с согласия клиенток.</p>
+      <p class="cases-empty" id="cases-empty" hidden>По этой теме историй пока нет. Приходите на бесплатное знакомство, и мы поговорим именно о вашей ситуации.</p>
+    </div>
+  </section>
+
+  <section id="reviews" aria-labelledby="reviews-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Отзывы</p>
+        <h2 id="reviews-h">Что говорят после встреч</h2>
+        <p class="lead">Слова клиентов и участниц групп. Имена убраны, текст сохранён, исправлены только опечатки.</p>
+      </div>
+      <div class="reviews">
+        <figure class="review"><blockquote>Я считала себя состоявшейся: хорошее образование, успех в профессии, любящий муж, трое детей, финансовая независимость. Но не чувствовала себя счастливой. Оказалось, надо работать с накопившимися обидами, тревогой, злостью. Порой это больно. Но я стала счастливой. И люди рядом со мной тоже.</blockquote><figcaption>Отзыв в Telegram · самооценка и внутреннее состояние</figcaption></figure>
+        <figure class="review"><blockquote>Такого облегчения у меня не было давно. Начала смотреть на вещи другими глазами и чувствовать по-другому. Ты как большое мягкое одеяло, которое согрело.</blockquote><figcaption>После консультации</figcaption></figure>
+        <figure class="review"><blockquote>У меня как груз спал. Я реально отделилась от родителей. Я это я, они это они. И мне не стыдно, что они такие, а я другая. Я достойна самого лучшего.</blockquote><figcaption>После консультации · семья и близкие</figcaption></figure>
+        <figure class="review"><blockquote>Я скептически шла: сейчас у всех одни марафоны, это даже раздражает. Но тебе я верю и пошла.</blockquote><figcaption>Участница онлайн-программы</figcaption></figure>
+        <figure class="review"><blockquote>Для многих я стала невыносима, потому что стала жутко неудобной. Раньше со мной бери и делай что хочешь. А сейчас нет.</blockquote><figcaption>Отзыв в Telegram · границы и самооценка</figcaption></figure>
+        <figure class="review"><blockquote>Я теперь в большинстве случаев могу понять, что чувствуют окружающие, и мне не стыдно сказать, что чувствую я. Стало значительно легче в общении.</blockquote><figcaption>Участница онлайн-программы · отношения с людьми</figcaption></figure>
+        <figure class="review"><blockquote>Так круто ощущать себя деревом, не опираясь ни на кого. Мне понадобилось несколько лет: сначала осознание и навык хотя бы слышать себя, маленькие шаги, потом знания и принятие.</blockquote><figcaption>Отзыв в Telegram · долгая работа</figcaption></figure>
+        <figure class="review"><blockquote>Раскопав и поняв свою обиду, я отпустила её и осталась такой же классной. Оказалось, простить проще, чем мне казалось. Да, три дня и ночи проревела, но оно того стоило.</blockquote><figcaption>Участница онлайн-программы · обиды и прощение</figcaption></figure>
+        <figure class="review"><blockquote>Нет больше такого животного страха и бьющей тревоги, когда я в настоящем. Жизнь какая-то наполненная, хотя я делаю всё как обычно.</blockquote><figcaption>Участница онлайн-программы · тревога</figcaption></figure>
+        <figure class="review"><blockquote>Пришло самое главное понимание: если больно, надо говорить. Меня всю жизнь учили обратному. Начала прислушиваться к себе.</blockquote><figcaption>Участница онлайн-программы · утрата и горе</figcaption></figure>
+        <figure class="review"><blockquote>Не устаю тебя благодарить за пендели и за правду.</blockquote><figcaption>Отзыв в Instagram*</figcaption></figure>
+        <figure class="review"><blockquote>Я очень переживала, что не справлюсь и испугаюсь. Но впервые сама всё организовала и говорила без страха и нервной дрожи. Мне было спокойно, я делала это, потому что хотела.</blockquote><figcaption>Отзыв в Instagram* · уверенность в себе</figcaption></figure>
+        <figure class="review"><blockquote>Я думала, что заплачу и мне дадут таблетку, которая избавит от всех проблем. Но оказалось, что нужно ещё работать над собой.</blockquote><figcaption>Участница онлайн-программы</figcaption></figure>
+        <figure class="review"><blockquote>С тобой можно поговорить на такие темы, на которые с родителями было сложно говорить. Из-за этого я долго не могла быть открытой. С тобой могу научиться свободе.</blockquote><figcaption>Слушательница эфиров · близость и открытость</figcaption></figure>
+        <figure class="review"><blockquote>За короткое время я научилась мечтать, а не отгонять мечты словами «вот размечталась». Расслаблять тело: вечно забитые мышцы плеч и шеи могут расслабляться. И различать эмоции и понимать, откуда они приходят.</blockquote><figcaption>Участница онлайн-программы · тело и эмоции</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Вопросы</p>
+        <h2 id="faq-h">Частые вопросы</h2>
+      </div>
+      <div class="faq">
+        <details open><summary>Вы работаете с мужчинами?</summary><p>Да. Ко мне приходят мужчины, в том числе предприниматели и руководители: с вопросами о семье, отношениях, напряжении на работе и решениях, которые не с кем обсудить. Говорим прямо и по делу.</p></details>
+        <details><summary>Партнёр не хочет идти к психологу. Есть ли смысл прийти одной или одному?</summary><p>Да. Когда меняется один человек, меняется и вся система. Если со временем понадобится работа в паре, я порекомендую коллегу: так у каждого из вас будет равное место, и никто не окажется «в гостях» у чужого терапевта.</p></details>
+        <details><summary>У меня нет проблем в отношениях. Мне к вам?</summary><p>Да. Тревога, самооценка, выгорание, карьера, переезд, кризис — со всем этим я работаю в личной терапии. Выберите свою тему выше или приходите на бесплатное знакомство.</p></details>
+        <details><summary>Мне неловко говорить о сексе. Как это будет?</summary><p>Это нормальное чувство, с него часто всё и начинается. Мы идём в вашем темпе, и вы сами решаете, о чём и насколько подробно говорить.</p></details>
+        <details><summary>Вы будете на чьей-то стороне в паре?</summary><p>Нет. В парной терапии мой клиент — ваша пара, в семейной — вся семья. Я слежу, чтобы у каждого было место и голос.</p></details>
+        <details><summary>Это конфиденциально?</summary><p>Да. Всё, что звучит на встречах, остаётся между нами. Супервизия проходит анонимно, без имён и деталей, по которым можно узнать человека.</p></details>
+        <details><summary>Сколько нужно встреч?</summary><p>Иногда достаточно диагностики и нескольких консультаций. Глубинные изменения обычно требуют от 10 встреч, для этого есть пакет «Пересборка». Точнее скажу после диагностики.</p></details>
+        <details><summary>Как проходят онлайн-сессии?</summary><p>По видеосвязи в Zoom. Нужен стабильный интернет и место, где вас никто не услышит. Работаю с клиентами в разных часовых поясах.</p></details>
+        <details><summary>Вы работаете с детьми?</summary><p>Нет, я работаю со взрослыми, парами и семьями. Если вас беспокоят отношения с ребёнком или подростком, можно прийти вам как родителю.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <div class="book-left" id="contacts">
+        <p class="eyebrow">Запись и контакты</p>
+        <h2 id="book-h">Давайте сделаем первый шаг</h2>
+        <p class="lead">Напишите в удобный мессенджер или оставьте заявку. Отвечу в течение дня и предложу время.</p>
+        <div class="contacts">
+          <div class="contact">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 4.5 2.8 11.7c-1 .4-1 1.8 0 2.1l4.7 1.5 1.8 5.6c.3.9 1.4 1.1 2 .4l2.6-2.7 4.9 3.6c.8.6 2 .1 2.2-.9L23.9 6c.3-1.1-.9-2-2.4-1.5zM9 15.5l9-7.3"/></svg></div>
+            <div class="meta"><small>Telegram, написать лично</small><a href="https://t.me/Galya_psyholog" target="_blank" rel="noopener">@Galya_psyholog</a></div>
+          </div>
+          <div class="contact">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 4.5 2.8 11.7c-1 .4-1 1.8 0 2.1l4.7 1.5 1.8 5.6c.3.9 1.4 1.1 2 .4l2.6-2.7 4.9 3.6c.8.6 2 .1 2.2-.9L23.9 6c.3-1.1-.9-2-2.4-1.5zM9 15.5l9-7.3"/></svg></div>
+            <div class="meta"><small>Telegram-канал «Галя точно психолог»</small><a href="https://t.me/galyatochnopsysholog" target="_blank" rel="noopener">t.me/galyatochnopsysholog</a></div>
+          </div>
+          <div class="contact">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></div>
+            <div class="meta"><small>Instagram*</small><a href="https://instagram.com/galya_tochno_psyholog" target="_blank" rel="noopener">@galya_tochno_psyholog</a></div>
+          </div>
+          <div class="contact">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+            <div class="meta"><small>Телефон, WhatsApp</small><span id="c-phone" class="ph">+7 (___) ___-__-__</span></div>
+            <button class="copy" type="button" data-copy="c-phone">Копировать</button>
+          </div>
+          <div class="contact">
+            <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></div>
+            <div class="meta"><small>Почта</small><span id="c-mail">galyapsy@bk.ru</span></div>
+            <button class="copy" type="button" data-copy="c-mail">Копировать</button>
+          </div>
+        </div>
+        <p class="sample">* Instagram принадлежит компании Meta, признанной экстремистской и запрещённой в РФ.</p>
+      </div>
+
+      <form class="card" id="book-form" novalidate>
+        <h3>Заявка на первую встречу</h3>
+        <div class="field">
+          <label for="f-name">Как к вам обращаться</label>
+          <input id="f-name" name="name" type="text" autocomplete="given-name" placeholder="Анна или Андрей" required>
+        </div>
+        <div class="field">
+          <label for="f-contact">Telegram или телефон</label>
+          <input id="f-contact" name="contact" type="text" placeholder="@username или +7 900 000-00-00" required>
+        </div>
+        <div class="field">
+          <label id="f-format-l">С чего хотите начать</label>
+          <div class="seg" role="radiogroup" aria-labelledby="f-format-l">
+            <input type="radio" name="format" id="fm1" value="Знакомство" checked><label for="fm1">Знакомство, бесплатно</label>
+            <input type="radio" name="format" id="fm2" value="Диагностика"><label for="fm2">Диагностика</label>
+            <input type="radio" name="format" id="fm3" value="Консультация"><label for="fm3">Консультация</label>
+            <input type="radio" name="format" id="fm4" value="Для пары"><label for="fm4">Для пары</label>
+            <input type="radio" name="format" id="fm5" value="Для семьи"><label for="fm5">Для семьи</label>
+            <input type="radio" name="format" id="fm6" value="Пакет «Пересборка»"><label for="fm6">Пакет</label>
+            <input type="radio" name="format" id="fm7" value="Группа"><label for="fm7">Группа</label>
+            <input type="radio" name="format" id="fm8" value="Сертификат"><label for="fm8">Сертификат</label>
+            <input type="radio" name="format" id="fm9" value="Год рядом"><label for="fm9">Год рядом</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-topic">Тема</label>
+          <select id="f-topic" name="topic">
+            <option>Пока не знаю</option>
+            <option>Семья и близкие</option>
+            <option>Пара и отношения</option>
+            <option>Близость и сексуальность</option>
+            <option>Тревога и эмоции</option>
+            <option>Самооценка и уверенность</option>
+            <option>Карьера, деньги, бизнес</option>
+            <option>Кризисы и перемены</option>
+            <option>Беременность и рождение ребёнка</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-msg">Пара слов о ситуации (необязательно)</label>
+          <textarea id="f-msg" name="msg" placeholder="Можно коротко, подробности обсудим на встрече"></textarea>
+        </div>
+        <label class="consent" for="f-consent"><input type="checkbox" id="f-consent" name="consent" required><span>Согласен(на) на обработку персональных данных в соответствии с <a href="#" class="ph">политикой конфиденциальности</a></span></label>
+        <button class="btn btn-primary" type="submit">Отправить заявку <span class="arr">→</span></button>
+        <div class="done" id="f-done" hidden role="status"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 «Галя точно психолог» · Галина Фомина, психолог, семейный и парный терапевт, сексолог </span>
+    <span>ИП Фомина Галина Александровна · ИНН <span class="ph">000000000000</span> · ОГРНИП <span class="ph">000000000000000</span></span>
+    <span>Не является медицинской услугой. В экстренной ситуации звоните 112.</span>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.copy), t=el.textContent.trim();
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Выделено';}
+    try{navigator.clipboard.writeText(t).then(function(){b.textContent='Скопировано';setTimeout(function(){b.textContent='Копировать'},1800)},sel)}catch(e){sel()}
+  });
+});
+var form=document.getElementById('book-form'), done=document.getElementById('f-done');
+// Кнопки «Это про меня» и кнопки форматов заполняют заявку
+document.querySelectorAll('[data-topic],[data-format]').forEach(function(a){
+  a.addEventListener('click',function(){
+    if(a.dataset.topic){form.topic.value=a.dataset.topic}
+    if(a.dataset.format){var r=form.querySelector('input[name=format][value="'+a.dataset.format+'"]');if(r)r.checked=true}
+  });
+});
+// Фильтр историй по темам
+var fBtns=document.querySelectorAll('.cases-filter button'), cases=document.querySelectorAll('#cases-list .case'), empty=document.getElementById('cases-empty');
+fBtns.forEach(function(b){
+  b.addEventListener('click',function(){
+    fBtns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    var f=b.dataset.filter, shown=0;
+    cases.forEach(function(c){var ok=f==='all'||c.dataset.topic.split('|').indexOf(f)>-1;c.hidden=!ok;if(ok)shown++});
+    empty.hidden=shown>0;
+  });
+});
+// Просмотр документов
+var dv=document.getElementById('doc-view');
+if(dv){document.querySelectorAll('.doc').forEach(function(b){b.addEventListener('click',function(){document.getElementById('doc-img').src=b.dataset.full;document.getElementById('doc-img').alt=b.dataset.cap;document.getElementById('doc-cap').textContent=b.dataset.cap;try{dv.showModal()}catch(e){dv.setAttribute('open','')}})});
+dv.querySelector('.doc-close').addEventListener('click',function(){dv.close?dv.close():dv.removeAttribute('open')});
+dv.addEventListener('click',function(e){if(e.target===dv)dv.close()});}
+form.addEventListener('submit',function(e){
+  e.preventDefault();
+  var name=form.name.value.trim(), contact=form.contact.value.trim();
+  if(!name||!contact){done.hidden=false;done.textContent='Укажите имя и контакт для связи, чтобы я могла ответить.';(name?form.contact:form.name).focus();return}
+  if(!form.consent.checked){done.hidden=false;done.textContent='Отметьте согласие на обработку данных, без него я не смогу принять заявку.';form.consent.focus();return}
+  var fmt=form.querySelector('input[name=format]:checked').value, topic=form.topic.value;
+  done.hidden=false;
+  done.textContent='Спасибо, '+name+'! Заявка «'+fmt+'», тема «'+topic+'», принята. Я свяжусь с вами по контакту '+contact+' в течение дня.';
+});
+</script>
+
+</body>
+</html>
