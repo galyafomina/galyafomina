@@ -364,6 +364,7 @@ a.case h3{font-size:21px}
 
 footer{border-top:1px solid var(--line);padding-block:36px;font-size:14px;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+.foot-links a{color:inherit}
 </style>
 
 </head>
@@ -582,7 +583,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <p class="fine" style="grid-column:1/-1">Формат не заменяет экстренную помощь. В кризисной ситуации звоните 112.</p>
         </div>
       </div>
-      <p class="note">Перенести встречу можно не позднее чем за 24 часа. Детей и подростков я не консультирую: работаю со взрослыми, парами и семьями.</p>
+      <p class="note">Перенести или отменить встречу можно не позднее чем за 48 часов, иначе она считается состоявшейся. Условия оплаты и возврата в <a href="oferta.html">публичной оферте</a>. Детей и подростков я не консультирую: работаю со взрослыми, парами и семьями.</p>
     </div>
   </section>
 
@@ -927,7 +928,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <label for="f-msg">Пара слов о ситуации (необязательно)</label>
           <textarea id="f-msg" name="msg" placeholder="Можно коротко, подробности обсудим на встрече"></textarea>
         </div>
-        <label class="consent" for="f-consent"><input type="checkbox" id="f-consent" name="consent" required><span>Согласен(на) на обработку персональных данных в соответствии с <a href="#" class="ph">политикой конфиденциальности</a></span></label>
+        <label class="consent" for="f-consent"><input type="checkbox" id="f-consent" name="consent" required><span>Согласен(на) на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></span></label>
         <button class="btn btn-primary" type="submit">Отправить заявку <span class="arr">→</span></button>
         <div class="done" id="f-done" hidden role="status"></div>
       </form>
@@ -937,8 +938,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
 
 <footer>
   <div class="wrap">
-    <span>© 2026 «Галя точно психолог» · Галина Фомина, психолог, семейный и парный терапевт, сексолог </span>
-    <span>ИП Фомина Галина Александровна · ИНН <span class="ph">000000000000</span> · ОГРНИП <span class="ph">000000000000000</span></span>
+    <span>© 2026 "Галя точно психолог" · Галина Фомина, психолог, семейный и парный терапевт, сексолог</span>
+    <span>ИП Фомина Галина Александровна · ИНН 781432912768 · ОГРНИП 326784700291054</span>
+    <span class="foot-links"><a href="privacy.html">Политика конфиденциальности</a> · <a href="oferta.html">Публичная оферта</a></span>
     <span>Не является медицинской услугой. В экстренной ситуации звоните 112.</span>
   </div>
 </footer>
