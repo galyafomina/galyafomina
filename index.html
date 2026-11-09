@@ -876,6 +876,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
       </div>
 
       <form class="card" id="book-form" novalidate>
+        <input type="text" name="website" id="f-website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <h3>Заявка на первую встречу</h3>
         <div class="field">
           <label for="f-name">Как к вам обращаться</label>
@@ -971,8 +972,19 @@ form.addEventListener('submit',function(e){
   if(!name||!contact){done.hidden=false;done.textContent='Укажите имя и контакт для связи, чтобы я могла ответить.';(name?form.contact:form.name).focus();return}
   if(!form.consent.checked){done.hidden=false;done.textContent='Отметьте согласие на обработку данных, без него я не смогу принять заявку.';form.consent.focus();return}
   var fmt=form.querySelector('input[name=format]:checked').value, topic=form.topic.value;
-  done.hidden=false;
-  done.textContent='Спасибо, '+name+'! Заявка «'+fmt+'», тема «'+topic+'», принята. Я свяжусь с вами по контакту '+contact+' в течение дня.';
+  var btn=form.querySelector('button[type=submit]');
+  btn.disabled=true; done.hidden=false; done.textContent='Отправляю заявку…';
+  fetch('https://galyaform.gfomina911.workers.dev/',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({name:name,contact:contact,format:fmt,topic:topic,msg:form.msg.value.trim(),website:form.website.value})})
+  .then(function(r){return r.json().then(function(j){if(!r.ok||!j.ok)throw new Error();})})
+  .then(function(){
+    done.textContent='Спасибо, '+name+'! Заявка "'+fmt+'", тема "'+topic+'", принята. Я свяжусь с вами по контакту '+contact+' в течение дня.';
+    form.reset();
+  })
+  .catch(function(){
+    done.innerHTML='Не получилось отправить заявку. Напишите мне напрямую в Telegram <a href="https://t.me/Galya_psyholog" target="_blank" rel="noopener">@Galya_psyholog</a> или на почту galyapsy@bk.ru.';
+  })
+  .finally(function(){btn.disabled=false;});
 });
 </script>
 
