@@ -154,7 +154,7 @@ nav.menu a{text-decoration:none;color:var(--muted);white-space:nowrap}
 .about .wrap{display:grid;gap:clamp(32px,5vw,64px)}
 @media(min-width:900px){.about .wrap{grid-template-columns:.9fr 1.1fr;align-items:start}}
 .about-photos{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;align-items:end}
-@media(min-width:900px){.about-photos{position:sticky;top:96px;align-self:start}}
+@media(min-width:900px){.about-photos{align-self:start}}
 .about-docs{min-width:0}
 @media(min-width:900px){.about-docs{grid-column:1/-1}}
 .about-photos img{width:100%;border-radius:var(--r);object-fit:cover}
@@ -166,7 +166,8 @@ nav.menu a{text-decoration:none;color:var(--muted);white-space:nowrap}
 .moto figcaption{font-size:13px;color:var(--muted)}
 .about-copy{display:grid;gap:20px;min-width:0}
 .about-copy p{max-width:62ch}
-.creds{display:grid;gap:0;margin-top:10px;border-top:1px solid var(--line)}
+.creds{display:grid;gap:0 clamp(24px,4vw,56px);margin:0 0 clamp(32px,5vw,56px);border-top:1px solid var(--line)}
+@media(min-width:900px){.creds{grid-template-columns:1fr 1fr}}
 .cred{display:grid;grid-template-columns:minmax(0,140px) 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15.5px}
 .cred span{color:var(--muted);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding-top:3px}
 @media(max-width:560px){.cred{grid-template-columns:1fr;gap:4px}}
@@ -665,6 +666,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <p class="sure-q">— А вы точно психолог?</p>
           <p class="sure-a">— <em>Точно.</em> Вот:</p>
         </div>
+      </div>
+      <div class="about-docs">
         <div class="creds">
           <div class="cred"><span>Метод</span><div>Гештальт-терапия, психодрама, системный взгляд на семью и пару</div></div>
           <div class="cred"><span>Психология</span><div>Высшее психологическое: бакалавр психологии, Московский институт психоанализа, 2025</div></div>
@@ -679,8 +682,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <div class="cred"><span>Личная терапия</span><div>9 лет непрерывной личной терапии</div></div>
           <div class="cred"><span>Официально</span><div>Работаю как ИП Фомина: договор, чек на каждую оплату</div></div>
         </div>
-      </div>
-      <div class="about-docs">
         <div class="docs">
           <p class="eyebrow">Документы</p>
           <div class="docs-grid">
