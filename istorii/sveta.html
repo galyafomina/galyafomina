@@ -363,6 +363,18 @@ a.case h3{font-size:21px}
 footer{border-top:1px solid var(--line);padding-block:36px;font-size:14px;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
 .foot-links a{color:inherit}
+
+.k-exp{padding-block:clamp(40px,6vw,72px)}
+.k-exp h2,.k-voice h2{font-size:clamp(24px,3vw,34px);margin:10px 0 22px}
+.k-exp-grid,.k-vgrid{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:760px){.k-exp-grid{grid-template-columns:1fr 1fr}.k-vgrid{grid-template-columns:repeat(3,1fr)}}
+.vcard{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.vcard video{display:block;width:100%;aspect-ratio:16/9;background:#000;object-fit:cover}
+.vcard .vt{padding:14px 16px 18px}
+.vcard .vt small{display:block;font:600 11px/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:6px}
+.vcard .vt b{font:500 17px/1.3 var(--display)}
+.vcard.big .vt b{font-size:20px}
+.k-voice{padding-block:clamp(32px,5vw,56px) clamp(40px,6vw,72px)}
 </style>
 <style>
 .k-hero{padding-block:clamp(40px,6vw,72px) 24px}
@@ -418,10 +430,20 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
     <div class="k-box a"><p class="eyebrow">Точка А</p><h2>С чем пришла</h2><ul><li>нет работы, своих денег, друзей и хобби</li><li>жила жизнью мужа</li><li>алкоголь стал способом справляться</li><li>не понимала, чего хочет и что чувствует</li><li>ждала готового решения за одну сессию</li></ul></div>
     <div class="k-box b"><p class="eyebrow">Точка Б</p><h2>К чему пришла</h2><ul><li>бросила пить и похудела</li><li>развелась, хотя это было тяжело</li><li>переехала к морю: новая работа, близкие друзья</li><li>новые отношения, сейчас у неё жених</li></ul></div>
   </div></section>
+  <section class="k-exp"><div class="wrap">
+    <p class="eyebrow">Ожидание и реальность</p>
+    <h2>Ждала решение за одну сессию. Получила другое</h2>
+    <div class="k-exp-grid"><figure class="vcard big" style="margin:0"><video controls playsinline preload="none" poster="video/sveta/07.jpg"><source src="video/sveta/07.mp4" type="video/mp4"></video><figcaption class="vt"><small>Ждала</small><b>"Сейчас ты мне скажешь решение, и всё"</b></figcaption></figure><figure class="vcard big" style="margin:0"><video controls playsinline preload="none" poster="video/sveta/08.jpg"><source src="video/sveta/08.mp4" type="video/mp4"></video><figcaption class="vt"><small>Получила</small><b>Пришла разбитой, а света в тоннеле не видела</b></figcaption></figure></div>
+  </div></section>
   <section class="k-work"><div class="wrap">
     <p class="eyebrow">Как шла работа</p>
     <p class="lead" style="color:var(--ink)">Решений за неё никто не давал, их пришлось искать внутри. Работали с запретом плакать при другом человеке: я ж сильная, я должна справляться сама. Когда чувства стали разрешёнными, алкоголь перестал быть нужен. Появились желания, злость, боль. И стало ясно, что этот брак ей не подходит.</p>
     <blockquote>Я думала: сейчас приду, ты мне скажешь решение, и всё. У меня за одну сессию всё решится.</blockquote>
+  </div></section>
+  <section class="k-voice"><div class="wrap">
+    <p class="eyebrow">Её слова</p>
+    <h2>Светлана о терапии: короткие видео</h2>
+    <div class="k-vgrid"><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/sveta/01.jpg"><source src="video/sveta/01.mp4" type="video/mp4"></video><figcaption class="vt"><small>Свобода</small><b>"Я выбираю, я свободна"</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/sveta/02.jpg"><source src="video/sveta/02.mp4" type="video/mp4"></video><figcaption class="vt"><small>Чувства</small><b>"Злость это круто"</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/sveta/03.jpg"><source src="video/sveta/03.mp4" type="video/mp4"></video><figcaption class="vt"><small>Самоценность</small><b>"Я стала себя ценить"</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/sveta/04.jpg"><source src="video/sveta/04.mp4" type="video/mp4"></video><figcaption class="vt"><small>Отношения</small><b>"Горжусь своими отношениями"</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/sveta/05.jpg"><source src="video/sveta/05.mp4" type="video/mp4"></video><figcaption class="vt"><small>Гордость</small><b>"Я собой горжусь"</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/sveta/06.jpg"><source src="video/sveta/06.mp4" type="video/mp4"></video><figcaption class="vt"><small>Про доверие</small><b>Почему стоит доверять отзывам</b></figcaption></figure></div>
   </div></section>
   <section class="k-final"><div class="wrap">
     <blockquote>Сейчас свободная птица. Порхать умею, оказывается. И вдвоём можно порхать</blockquote>
