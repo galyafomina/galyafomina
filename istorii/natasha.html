@@ -363,6 +363,17 @@ a.case h3{font-size:21px}
 footer{border-top:1px solid var(--line);padding-block:36px;font-size:14px;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
 .foot-links a{color:inherit}
+.k-exp{padding-block:clamp(40px,6vw,72px)}
+.k-exp h2,.k-voice h2{font-size:clamp(24px,3vw,34px);margin:10px 0 22px}
+.k-exp-grid,.k-vgrid{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:760px){.k-exp-grid{grid-template-columns:1fr 1fr}.k-vgrid{grid-template-columns:repeat(3,1fr)}}
+.vcard{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.vcard video{display:block;width:100%;aspect-ratio:16/9;background:#000;object-fit:cover}
+.vcard .vt{padding:14px 16px 18px}
+.vcard .vt small{display:block;font:600 11px/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:6px}
+.vcard .vt b{font:500 17px/1.3 var(--display)}
+.vcard.big .vt b{font-size:20px}
+.k-voice{padding-block:clamp(32px,5vw,56px) clamp(40px,6vw,72px)}
 </style>
 <style>
 .k-hero{padding-block:clamp(40px,6vw,72px) 24px}
@@ -422,6 +433,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
     <p class="eyebrow">Как шла работа</p>
     <p class="lead" style="color:var(--ink)">Учились замечать чувства: сначала слёзы, потом слова. Под тревогой нашлась усталость. Однажды я задала неприятный вопрос про её часть в конфликте, и она осталась.</p>
     <blockquote>Кажется, что ты себя очень хорошо знаешь. А на деле — не особо-то.</blockquote>
+  </div></section>
+  <section class="k-voice"><div class="wrap">
+    <p class="eyebrow">Её слова</p>
+    <h2>Наташа о терапии: короткие видео</h2>
+    <div class="k-vgrid"><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/natasha/01.jpg"><source src="video/natasha/01.mp4" type="video/mp4"></video><figcaption class="vt"><small>Спокойствие</small><b>Стала спокойнее</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/natasha/02.jpg"><source src="video/natasha/02.mp4" type="video/mp4"></video><figcaption class="vt"><small>Путь</small><b>Год терапии и голос в голове</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/natasha/03.jpg"><source src="video/natasha/03.mp4" type="video/mp4"></video><figcaption class="vt"><small>Бывший муж</small><b>Бывший муж ушёл на задний план</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/natasha/04.jpg"><source src="video/natasha/04.mp4" type="video/mp4"></video><figcaption class="vt"><small>Мудрость</small><b>"Какая я мудрая женщина"</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/natasha/05.jpg"><source src="video/natasha/05.mp4" type="video/mp4"></video><figcaption class="vt"><small>Гнев</small><b>Сменила гнев на милость</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/natasha/06.jpg"><source src="video/natasha/06.mp4" type="video/mp4"></video><figcaption class="vt"><small>Тревога</small><b>Паника за сына прошла</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/natasha/07.jpg"><source src="video/natasha/07.mp4" type="video/mp4"></video><figcaption class="vt"><small>Опора</small><b>Стала отмечать, что может присвоить</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/natasha/08.jpg"><source src="video/natasha/08.mp4" type="video/mp4"></video><figcaption class="vt"><small>Благодарность</small><b>"Мне повезло попасть к тебе"</b></figcaption></figure></div>
   </div></section>
   <section class="k-final"><div class="wrap">
     <blockquote>Самый сильный инсайт, но неприятный: я тоже могу быть не права</blockquote>

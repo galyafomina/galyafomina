@@ -363,6 +363,17 @@ a.case h3{font-size:21px}
 footer{border-top:1px solid var(--line);padding-block:36px;font-size:14px;color:var(--muted)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
 .foot-links a{color:inherit}
+.k-exp{padding-block:clamp(40px,6vw,72px)}
+.k-exp h2,.k-voice h2{font-size:clamp(24px,3vw,34px);margin:10px 0 22px}
+.k-exp-grid,.k-vgrid{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:760px){.k-exp-grid{grid-template-columns:1fr 1fr}.k-vgrid{grid-template-columns:repeat(3,1fr)}}
+.vcard{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.vcard video{display:block;width:100%;aspect-ratio:16/9;background:#000;object-fit:cover}
+.vcard .vt{padding:14px 16px 18px}
+.vcard .vt small{display:block;font:600 11px/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:6px}
+.vcard .vt b{font:500 17px/1.3 var(--display)}
+.vcard.big .vt b{font-size:20px}
+.k-voice{padding-block:clamp(32px,5vw,56px) clamp(40px,6vw,72px)}
 </style>
 <style>
 .k-hero{padding-block:clamp(40px,6vw,72px) 24px}
@@ -422,6 +433,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
     <p class="eyebrow">Как шла работа</p>
     <p class="lead" style="color:var(--ink)">Распутывали клубок по ниточке. Центральной оказалась тема родителей. Замечали, где она сдерживается, и учились говорить это вслух. Однажды она поняла, что уже не та девочка, которой было небезопасно.</p>
     <blockquote>Мне приоткрылось, что испытывать с другими людьми напряжение — это нормально.</blockquote>
+  </div></section>
+  <section class="k-voice"><div class="wrap">
+    <p class="eyebrow">Её слова</p>
+    <h2>Юля о терапии: короткие видео</h2>
+    <div class="k-vgrid"><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/yulya/01.jpg"><source src="video/yulya/01.mp4" type="video/mp4"></video><figcaption class="vt"><small>Родители</small><b>"Меньше напряжения с родителями"</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/yulya/02.jpg"><source src="video/yulya/02.mp4" type="video/mp4"></video><figcaption class="vt"><small>Спокойствие</small><b>"Внутреннее спокойствие"</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/yulya/03.jpg"><source src="video/yulya/03.mp4" type="video/mp4"></video><figcaption class="vt"><small>Границы</small><b>"Говорю, где мне не подходит"</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/yulya/04.jpg"><source src="video/yulya/04.mp4" type="video/mp4"></video><figcaption class="vt"><small>Результаты</small><b>"Радость за результаты"</b></figcaption></figure><figure class="vcard" style="margin:0"><video controls playsinline preload="none" poster="video/yulya/05.jpg"><source src="video/yulya/05.mp4" type="video/mp4"></video><figcaption class="vt"><small>Тревога</small><b>"Напряжение это нормально"</b></figcaption></figure></div>
   </div></section>
   <section class="k-final"><div class="wrap">
     <blockquote>Не скажу, что спокойно на 100%, но тревожности явно стало меньше. Наверное, я тоже горжусь собой</blockquote>
