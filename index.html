@@ -392,6 +392,23 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
 @media(max-width:1119px){.burger{display:block}}
 @media(min-width:1120px){.mmenu{display:none!important}}
 @media(max-width:380px){.top .wrap{gap:6px}.top-right{gap:6px}.top .btn{padding:0 10px;font-size:12px;min-height:40px}.logo b{font-size:13px}.logo img{width:32px;height:32px}.logo{gap:6px}.burger{width:40px;height:40px}.burger span{left:10px;right:10px}.burger span:nth-child(1){top:13px}.burger span:nth-child(2){top:19px}.burger span:nth-child(3){top:25px}.burger[aria-expanded="true"] span:nth-child(1),.burger[aria-expanded="true"] span:nth-child(3){top:19px}}
+
+/* Подкаст */
+.podcast{padding-block:clamp(48px,7vw,96px)}
+.podcast .wrap{display:grid;gap:28px}
+@media(min-width:900px){.podcast .wrap{grid-template-columns:.8fr 1.2fr;align-items:center;gap:56px}}
+.podcast h2{margin:12px 0 14px}
+.podcast p.lead{color:var(--muted);max-width:46ch}
+.pc-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.pc-links .btn{min-height:46px;padding:0 20px;font-size:14.5px}
+.pc-video{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#111}
+.pc-video iframe,.pc-video button{position:absolute;inset:0;width:100%;height:100%;border:0}
+.pc-video button{padding:0;cursor:pointer;background:#111;display:block}
+.pc-video button img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;opacity:.88;display:block}
+.pc-play{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:var(--btn);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:transform .2s}
+.pc-video button:hover .pc-play{transform:scale(1.07)}
+.pc-play:after{content:"";margin-left:5px;border-style:solid;border-width:12px 0 12px 20px;border-color:transparent transparent transparent #fff}
+.pc-cap{position:absolute;left:14px;bottom:12px;right:14px;color:#fff;font:600 13px/1.3 var(--body);text-shadow:0 1px 6px rgba(0,0,0,.7);text-align:left}
 </style>
 
 </head>
@@ -404,13 +421,13 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
       <a href="#topics">С чем помогаю</a>
       <a href="#groups">Группы</a>
       <a href="#cases">Кейсы</a>
-      <a href="#about">Обо мне</a>
+      <a href="#about">Обо мне</a><a href="#podcast">Подкаст</a>
       <a href="#faq">Вопросы</a>
       <a href="#contacts">Контакты</a>
     </nav>
     <div class="top-right"><a class="btn btn-primary" href="#book" data-format="Знакомство">Знакомство <span class="long">бесплатно</span></a><button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mmenu"><span></span><span></span><span></span></button></div>
   </div>
-<nav class="mmenu" id="mmenu" aria-label="Меню" hidden><a href="#price">Форматы и цены</a><a href="#topics">С чем помогаю</a><a href="#groups">Группы</a><a href="#cases">Кейсы</a><a href="#about">Обо мне</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a></nav></header>
+<nav class="mmenu" id="mmenu" aria-label="Меню" hidden><a href="#price">Форматы и цены</a><a href="#topics">С чем помогаю</a><a href="#groups">Группы</a><a href="#cases">Кейсы</a><a href="#about">Обо мне</a><a href="#podcast">Подкаст</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a></nav></header>
 
 <main id="top">
   <section class="hero">
@@ -841,6 +858,27 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
     </div>
   </section>
 
+  <section id="podcast" class="podcast" aria-labelledby="podcast-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Где меня послушать</p>
+        <h2 id="podcast-h">Подкаст "Грань"</h2>
+        <p class="lead">Я была гостем подкаста Алексея Скакуна. Если сомневаетесь, стоит ли мне писать, посмотрите выпуск: станет понятно, как я работаю и как разговариваю с людьми.</p>
+        <div class="pc-links">
+          <a class="btn btn-ghost" href="https://rutube.ru/video/private/ae1e7be2cd01282b65560d6b3aee4e8f/?p=5wkZho-awulkQyBAHkVBmQ" target="_blank" rel="noopener">Смотреть в Rutube</a>
+          <a class="btn btn-ghost" href="https://vkvideo.ru/video-237350174_456239187" target="_blank" rel="noopener">Смотреть во ВКонтакте</a>
+        </div>
+      </div>
+      <div class="pc-video" id="pc-video">
+        <button type="button" aria-label="Смотреть выпуск подкаста Грань" data-yt="ly_KX98LGsw">
+          <img src="img/hero.jpg" alt="" loading="lazy">
+          <span class="pc-play" aria-hidden="true"></span>
+          <span class="pc-cap">Подкаст "Грань" с Алексеем Скакуном</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
   <section class="freedom" aria-label="Подход">
     <div class="wrap">
       <div class="freedom-inner">
@@ -1041,6 +1079,11 @@ m.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});
 document.addEventListener('click',function(e){if(!m.contains(e.target)&&!b.contains(e.target))set(false)});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
 window.addEventListener('resize',function(){if(window.innerWidth>=1120)set(false)});
+})();
+</script>
+<script>
+(function(){var b=document.querySelector('#pc-video button');if(!b)return;
+b.addEventListener('click',function(){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.getAttribute('data-yt')+'?autoplay=1&rel=0';f.title='Подкаст Грань';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.setAttribute('allowfullscreen','');b.replaceWith(f)});
 })();
 </script>
 </body>
